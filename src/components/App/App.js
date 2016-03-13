@@ -5,8 +5,8 @@ import styles from './App.css'
 export class App extends Component {
   render () {
     return (
-      <div className="vimla-container">
-        app
+      <div>
+        {this.props.children}
       </div>
     )
   }
