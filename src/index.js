@@ -5,7 +5,8 @@ import {
   browserHistory,
   IndexRoute,
   Route,
-  Router
+  Router,
+  Redirect
 } from 'react-router'
 import Start from './views/Start/Start'
 
@@ -17,6 +18,7 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route component={App} path="/">
       <IndexRoute component={Start} />
+      <Redirect from="*" to="/" />
     </Route>
   </Router>
 ), document.getElementById('root'))
