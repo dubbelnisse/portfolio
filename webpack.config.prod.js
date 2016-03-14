@@ -31,7 +31,10 @@ module.exports = {
       compressor: {
         warnings: false
       }
-    })
+    }),
+    new TransferWebpackPlugin([
+      { from: '/src/assets/images', to: 'images' }
+    ], path.join(__dirname, 'src')),
   ],
   postcss: [
     require('postcss-import')({

@@ -1,0 +1,12 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.me {
+  border-radius: 100%;
+  border: 10px solid #fff;
+  max-height: 250px;
+}
