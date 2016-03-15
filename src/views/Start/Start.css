@@ -11,3 +11,17 @@
   max-height: 250px;
   max-width: 250px;
 }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
