@@ -54,6 +54,7 @@
   "dependencies": {
     "alt": "^0.18.2",
     "alt-utils": "^1.0.0",
+    "babel-polyfill": "^6.9.1",
     "body-parser": "^1.15.0",
     "classnames": "^2.2.3",
     "exports-loader": "^0.6.3",
