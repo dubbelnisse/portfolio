@@ -1,19 +1,8 @@
-FROM iteamdev/node-webpack:node-4.2
+FROM nginx:1.14-alpine
 
-COPY package.json /app/
-WORKDIR /app
+RUN rm -rf /usr/share/nginx/html
 
-RUN npm install --production
+COPY app /usr/share/nginx/html
+COPY default.conf /etc/nginx/conf.d/default.conf
 
-COPY .babelrc ./
-COPY gulpfile.js ./
-
-COPY webpack.config.prod.js ./
-COPY index.html ./
-COPY server.js ./
-
-COPY ./src ./src
-RUN npm run -s build
-
-EXPOSE 3000
-CMD npm run -s start
+CMD ["nginx", "-g", "daemon off;"]
