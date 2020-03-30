@@ -17,6 +17,26 @@ const WaveWrapper = styled.div`
 
 const Wave = styled.img`
   max-width: 50px;
+
+  &:hover {
+    animation: wave 500ms ease-in-out;
+    transform: rotateZ(0);
+  }
+
+  @keyframes wave {
+    0% {
+      transform: rotateZ(0);
+    }
+    25% {
+      transform: rotateZ(12deg);
+    }
+    75% {
+      transform: rotateZ(-12deg);
+    }
+    100% {
+      transform: rotateZ(0);
+    }
+  }
 `
 
 const Greetings = styled.h1`
