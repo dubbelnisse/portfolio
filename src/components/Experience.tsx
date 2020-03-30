@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
   margin-bottom: 20px;
@@ -20,7 +21,7 @@ const About = styled.ul`
   margin: 0;
 
   li {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 `
 
@@ -30,6 +31,7 @@ interface Entry {
   start: string
   end: string | null
   about: string[]
+  link: string | null
 }
 
 interface AnExperienceProps {
@@ -49,6 +51,13 @@ const Experience: React.FC<AnExperienceProps> = ({ experience }) => {
           <li key={`about-${i}`}>{paragraph}</li>
         ))}
       </About>
+      {experience.link ? (
+        <Link to={experience.link}>
+          Here's a list what I've been up to @ {experience.employer}
+        </Link>
+      ) : (
+        ''
+      )}
     </Wrapper>
   )
 }

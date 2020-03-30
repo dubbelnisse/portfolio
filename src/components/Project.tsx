@@ -3,8 +3,11 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   margin-bottom: 20px;
-  border-bottom: 1px dashed rgb(235, 235, 235);
   padding-bottom: 20px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px dashed rgb(235, 235, 235);
+  }
 `
 
 const Employer = styled.h3`
