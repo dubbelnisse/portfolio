@@ -5,12 +5,23 @@ const Wrapper = styled.div`
   margin-bottom: 20px;
 `
 
-const Employer = styled.p`
+const Employer = styled.h3`
   font-size: 20px;
 `
 
 const TitleAndTime = styled.p`
-  color: rgb(199, 199, 199);
+  color: rgb(61, 61, 61);
+  font-weight: bold;
+`
+
+const About = styled.ul`
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  li {
+    margin-bottom: 30px;
+  }
 `
 
 interface Entry {
@@ -18,7 +29,7 @@ interface Entry {
   position: string
   start: string
   end: string | null
-  about: string
+  about: string[]
 }
 
 interface AnExperienceProps {
@@ -33,7 +44,11 @@ const AnExperience: React.FC<AnExperienceProps> = ({ experience }) => {
         {experience.position} | {experience.start} -{' '}
         {experience.end ? experience.end : 'Present'}
       </TitleAndTime>
-      <p>{experience.about}</p>
+      <About>
+        {experience.about.map((paragraph, i) => (
+          <li key={`about-${i}`}>{paragraph}</li>
+        ))}
+      </About>
     </Wrapper>
   )
 }
