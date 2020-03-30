@@ -53,8 +53,7 @@ const About = styled.p`
 
 const MeWrapper = styled.div`
   @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
 `
 
