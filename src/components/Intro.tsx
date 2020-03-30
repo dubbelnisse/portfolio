@@ -5,6 +5,10 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-column-gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const WaveWrapper = styled.div`
@@ -24,6 +28,13 @@ const Greetings = styled.h1`
 const About = styled.p`
   font-size: 25px;
   color: rgb(41, 41, 41);
+`
+
+const MeWrapper = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 `
 
 const Me = styled.img`
@@ -47,14 +58,14 @@ const Intro = () => {
             Hey<GrayText>,</GrayText>
           </Greetings>
           <About>
-            My name is <strong>Nils</strong> and I'm an{' '}
+            My name is <strong>Nils</strong> and I'm a{' '}
             <strong>developer</strong> based in{' '}
             <strong>Stockholm, Sweden</strong>.
           </About>
         </div>
-        <div>
+        <MeWrapper>
           <Me src="/images/me.jpg" alt="Nils Nilsson" />
-        </div>
+        </MeWrapper>
       </Content>
     </>
   )

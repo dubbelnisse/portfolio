@@ -24,7 +24,7 @@ const App = () => {
       <Content>
         <Intro />
         <Experience />
-        <Footer>Nils Nilssin &hearts; {format(new Date(), 'yyyy')}</Footer>
+        <Footer>Nils Nilsson &hearts; {format(new Date(), 'yyyy')}</Footer>
       </Content>
     </Wrapper>
   )
