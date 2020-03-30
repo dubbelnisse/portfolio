@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Experience from './components/Experience'
-import Intro from './components/Intro'
+import { Switch, Route } from 'react-router-dom'
+import Home from './routes/Home'
+import ProjectsIteam from './routes/projects/Iteam'
 import { format } from 'date-fns'
 
 const Wrapper = styled.div`
@@ -22,8 +23,14 @@ const App = () => {
   return (
     <Wrapper>
       <Content>
-        <Intro />
-        <Experience />
+        <Switch>
+          <Route path="/projects/iteam">
+            <ProjectsIteam />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
         <Footer>Nils Nilsson &hearts; {format(new Date(), 'yyyy')}</Footer>
       </Content>
     </Wrapper>
