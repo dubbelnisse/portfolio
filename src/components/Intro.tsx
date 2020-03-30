@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SocialLinks from './SocialLinks'
 
 const Content = styled.div`
   display: grid;
@@ -82,6 +83,7 @@ const Intro = () => {
             <strong>developer</strong> based in{' '}
             <strong>Stockholm, Sweden</strong>.
           </About>
+          <SocialLinks />
         </div>
         <MeWrapper>
           <Me src="/images/me.jpg" alt="Nils Nilsson" />
