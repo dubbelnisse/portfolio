@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Header = styled.div`
+const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-column-gap: 20px;
-  padding-top: 50px;
+`
+
+const WaveWrapper = styled.div`
+  padding: 30px 0;
 `
 
 const Wave = styled.img`
@@ -15,6 +18,7 @@ const Wave = styled.img`
 const Greetings = styled.h1`
   font-size: 70px;
   color: rgb(41, 41, 41);
+  margin-top: 0;
 `
 
 const About = styled.p`
@@ -33,21 +37,26 @@ const GrayText = styled.span`
 
 const Intro = () => {
   return (
-    <Header>
-      <div>
+    <>
+      <WaveWrapper>
         <Wave src="/images/wave.png" alt="wave" />
-        <Greetings>
-          Hey<GrayText>,</GrayText>
-        </Greetings>
-        <About>
-          My name is <strong>Nils</strong> and I'm an <strong>developer</strong>{' '}
-          based in <strong>Stockholm, Sweden</strong>.
-        </About>
-      </div>
-      <div>
-        <Me src="/images/me.jpg" alt="Nils Nilsson" />
-      </div>
-    </Header>
+      </WaveWrapper>
+      <Content>
+        <div>
+          <Greetings>
+            Hey<GrayText>,</GrayText>
+          </Greetings>
+          <About>
+            My name is <strong>Nils</strong> and I'm an{' '}
+            <strong>developer</strong> based in{' '}
+            <strong>Stockholm, Sweden</strong>.
+          </About>
+        </div>
+        <div>
+          <Me src="/images/me.jpg" alt="Nils Nilsson" />
+        </div>
+      </Content>
+    </>
   )
 }
 
