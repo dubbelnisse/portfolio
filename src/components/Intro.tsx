@@ -50,7 +50,7 @@ const Intro = () => {
   return (
     <>
       <WaveWrapper>
-        <Wave src="/images/wave.png" alt="wave" />
+        <Wave src="/images/wave.png" alt="wave-emjoi" />
       </WaveWrapper>
       <Content>
         <div>

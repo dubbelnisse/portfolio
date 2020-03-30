@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Switch, Route } from 'react-router-dom'
 import Home from './routes/Home'
 import ProjectsIteam from './routes/projects/Iteam'
-import { format } from 'date-fns'
+import Footer from './components/Footer'
 
 const Wrapper = styled.div`
   display: grid;
@@ -12,11 +12,6 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   grid-column: 3/4;
-`
-
-const Footer = styled.footer`
-  margin: 10px 0;
-  text-align: center;
 `
 
 const App = () => {
@@ -31,7 +26,7 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
-        <Footer>Nils Nilsson &hearts; {format(new Date(), 'yyyy')}</Footer>
+        <Footer />
       </Content>
     </Wrapper>
   )
