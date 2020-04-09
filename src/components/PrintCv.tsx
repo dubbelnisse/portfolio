@@ -38,7 +38,7 @@ const print = () => {
 const PrintCv = () => {
   return (
     <Wrapper>
-      <p>Need a tradisional CV?</p>
+      <p>Need a traditional CV?</p>
       <Button onClick={print}>DOWNLOAD PDF</Button>
     </Wrapper>
   )
