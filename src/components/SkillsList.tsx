@@ -36,6 +36,7 @@ const Skills = styled.ul`
 
     @media print {
       -webkit-print-color-adjust: exact;
+      color-adjust: exact;
     }
   }
 `
