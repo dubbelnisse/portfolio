@@ -1,0 +1,17 @@
+export default [
+  'React',
+  'React Native',
+  'TypeScript',
+  'Node',
+  'GraphQL',
+  'AWS',
+  'Docker',
+  'PostgreSQL',
+  'ElasticSearch',
+  'MongoDB',
+  'NodeBB',
+  'REST',
+  'SQL',
+  'Angular',
+  'Git',
+]

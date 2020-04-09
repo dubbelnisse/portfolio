@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SocialLinks from './SocialLinks'
+import ContactLinks from './ContactLinks'
 
 const Content = styled.div`
   display: grid;
@@ -10,10 +11,20 @@ const Content = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+
+  @media print {
+    grid-template-columns: 1fr 200px;
+  }
 `
 
 const WaveWrapper = styled.div`
   padding: 30px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  @media print {
+    padding: 10mm 0 5mm 0;
+  }
 `
 
 const Wave = styled.img`
@@ -38,17 +49,29 @@ const Wave = styled.img`
       transform: rotateZ(0);
     }
   }
+
+  @media print {
+    max-width: 10mm;
+  }
 `
 
 const Greetings = styled.h1`
   font-size: 70px;
   color: rgb(41, 41, 41);
   margin-top: 0;
+
+  @media print {
+    font-size: 30pt;
+  }
 `
 
 const About = styled.p`
   font-size: 25px;
   color: rgb(41, 41, 41);
+
+  @media print {
+    font-size: 14pt;
+  }
 `
 
 const MeWrapper = styled.div`
@@ -60,6 +83,10 @@ const MeWrapper = styled.div`
 const Me = styled.img`
   border-radius: 50%;
   max-width: 300px;
+
+  @media print {
+    width: 40mm;
+  }
 `
 
 const GrayText = styled.span`
@@ -71,6 +98,7 @@ const Intro = () => {
     <>
       <WaveWrapper>
         <Wave src="/images/wave.png" alt="wave-emjoi" />
+        <ContactLinks />
       </WaveWrapper>
       <Content>
         <div>
@@ -85,7 +113,7 @@ const Intro = () => {
           <SocialLinks />
         </div>
         <MeWrapper>
-          <Me src="/images/me.jpg" alt="Nils Nilsson" />
+          <Me className="me" src="/images/me.jpg" alt="Nils Nilsson" />
         </MeWrapper>
       </Content>
     </>

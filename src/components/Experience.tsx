@@ -4,10 +4,18 @@ import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
   margin-bottom: 20px;
+
+  @media print {
+    font-size: 10pt;
+  }
 `
 
 const Employer = styled.h3`
   font-size: 20px;
+
+  @media print {
+    font-size: 12pt;
+  }
 `
 
 const TitleAndTime = styled.p`
@@ -22,6 +30,12 @@ const About = styled.ul`
 
   li {
     margin-bottom: 15px;
+  }
+`
+
+const ExperienceLink = styled(Link)`
+  @media print {
+    display: none;
   }
 `
 
@@ -52,9 +66,9 @@ const Experience: React.FC<AnExperienceProps> = ({ experience }) => {
         ))}
       </About>
       {experience.link ? (
-        <Link to={experience.link}>
+        <ExperienceLink to={experience.link}>
           Here's a list what I've been up to @ {experience.employer}
-        </Link>
+        </ExperienceLink>
       ) : (
         ''
       )}

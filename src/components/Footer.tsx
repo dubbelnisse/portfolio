@@ -7,6 +7,10 @@ const Wrapper = styled.footer`
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+
+  @media print {
+    display: none;
+  }
 `
 
 const Heart = styled.img`

@@ -9,6 +9,10 @@ const Wrapper = styled.div`
 
 const H2 = styled.h2`
   margin: 30px 0;
+
+  @media print {
+    font-size: 14pt;
+  }
 `
 
 const ExperienceList = () => {
