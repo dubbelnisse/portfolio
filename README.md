@@ -1,14 +1,14 @@
 # Personal porfolio site
 
-nisse.dev / nilssonnils.se
+nisse.dev
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## development
 
 ```
-$ npm i
-$ npm start
+$ yarn
+$ yarn start
 ```
 
 ## deployment

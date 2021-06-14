@@ -1,9 +1,20 @@
 export default [
   {
+    employer: 'UR, Sveriges Utbildningsradio AB',
+    position: 'Fullstack Developer',
+    start: 'DEC 2020',
+    end: null,
+    about: [
+      'UR (Swedish Educational Broadcasting Company) is part of the public service broadcasting group in Sweden, with Swedish Radio (SR) and Swedish Television (SVT). UR’s mandate is to produce and broadcast educational and general knowledge programmes which strengthen, broaden and complement the work of others active in education.',
+      'My role here is to mainly work with the APIs (Node, TypeScript) for web, apps and external parterns. I also do some devops work and helping out with varouse frontend products (React, Next.js).',
+    ],
+    link: null,
+  },
+  {
     employer: 'Iteam',
     position: 'Developer',
     start: 'SEP 2014',
-    end: null,
+    end: 'NOV 2020',
     about: [
       'Iteam is a development consultancy working mostly in-house.',
       'My role on Iteam is fullstack developer. For frontend we use React and React Native with TypeScript. We write all code using TDD and Jest. And backend in Node. API integrations are made using GraphQL or REST.',
