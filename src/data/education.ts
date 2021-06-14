@@ -1,4 +1,4 @@
-export default [
+const educations = [
   {
     school: 'Nackademin',
     start: '2011',
@@ -6,3 +6,5 @@ export default [
     education: 'Interaction design',
   },
 ]
+
+export default educations

@@ -1,4 +1,4 @@
-export default [
+const iteamProjects = [
   {
     name: 'Nectarine Health',
     start: '2020',
@@ -97,3 +97,5 @@ export default [
     techniques: ['Angular', 'Mentoring'],
   },
 ]
+
+export default iteamProjects

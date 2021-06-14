@@ -51,7 +51,7 @@ interface ProjectProps {
   project: Project
 }
 
-const Project: React.FC<ProjectProps> = ({ project }) => {
+const ProjectItem: React.FC<ProjectProps> = ({ project }) => {
   return (
     <Wrapper>
       <Employer>{project.name}</Employer>
@@ -69,4 +69,4 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
   )
 }
 
-export default Project
+export default ProjectItem

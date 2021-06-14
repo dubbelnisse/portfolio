@@ -1,4 +1,4 @@
-export default [
+const experiences = [
   {
     employer: 'UR, Sveriges Utbildningsradio AB',
     position: 'Fullstack Developer',
@@ -44,3 +44,5 @@ export default [
     link: null,
   },
 ]
+
+export default experiences

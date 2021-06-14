@@ -1,4 +1,4 @@
-export default [
+const skills = [
   'React',
   'React Native',
   'TypeScript',
@@ -15,3 +15,5 @@ export default [
   'Angular',
   'Git',
 ]
+
+export default skills
