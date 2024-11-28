@@ -1,6 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import { Switch, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from './routes/Home'
 import ProjectsIteam from './routes/projects/Iteam'
 import Footer from './components/Footer'
@@ -14,22 +13,16 @@ const Content = styled.div`
   grid-column: 3/4;
 `
 
-const App = () => {
-  return (
-    <Wrapper>
-      <Content>
-        <Switch>
-          <Route path="/projects/iteam">
-            <ProjectsIteam />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <Footer />
-      </Content>
-    </Wrapper>
-  )
-}
+const App = () => (
+  <Wrapper>
+    <Content>
+      <Routes>
+        <Route path="/projects/iteam" element={<ProjectsIteam />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Content>
+  </Wrapper>
+)
 
 export default App

@@ -1,4 +1,3 @@
-import React from 'react'
 import ExperienceList from '../components/ExperienceList'
 import Intro from '../components/Intro'
 import SkillsList from '../components/SkillsList'

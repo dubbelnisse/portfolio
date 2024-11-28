@@ -1,4 +1,3 @@
-import React from 'react'
 import projects from '../../data/iteam-projects'
 import Project from '../../components/Project'
 import styled from 'styled-components'
