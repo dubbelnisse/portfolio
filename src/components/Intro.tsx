@@ -107,7 +107,8 @@ const Intro = () => {
           </Greetings>
           <About>
             My name is <strong>Nils</strong> and I'm a{' '}
-            <strong>fullstack developer</strong>, based in{' '}
+            <strong>fullstack developer</strong> with{' '}
+            <strong>13+ years of experience</strong>, based in{' '}
             <strong>Stockholm, Sweden</strong>.
           </About>
           <SocialLinks />
