@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   display: none;
   max-width: 600px;
   font-size: 10pt;
-  margin-top: 30mm;
+  margin-top: 10mm;
 
   @media print {
     display: block;

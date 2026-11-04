@@ -1,4 +1,4 @@
-# Personal porfolio site
+# Personal portfolio site
 
 nisse.dev
 
@@ -14,5 +14,5 @@ $ yarn start
 ## deployment
 
 ```
-$ now
+$ vercel
 ```

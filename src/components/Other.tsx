@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   display: none;
   font-size: 10pt;
-  margin-bottom: 10mm;
 
   @media print {
     display: block;

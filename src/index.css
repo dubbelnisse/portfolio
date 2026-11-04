@@ -21,3 +21,16 @@ a {
 a:hover {
   color: rgb(199, 199, 199);
 }
+
+/* No page margin leaves no room for the browser's date/URL header and footer */
+@page {
+  margin: 0;
+}
+
+@media print {
+  body {
+    padding: 10mm;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}

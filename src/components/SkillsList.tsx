@@ -3,18 +3,19 @@ import data from '../data/skills'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  display: none;
   max-width: 600px;
-  font-size: 10pt;
 
   @media print {
-    display: block;
+    font-size: 10pt;
   }
 `
 
 const H2 = styled.h2`
   margin: 30px 0;
-  font-size: 14pt;
+
+  @media print {
+    font-size: 14pt;
+  }
 `
 
 const Skills = styled.ul`
