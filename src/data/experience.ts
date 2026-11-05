@@ -8,9 +8,9 @@ const experiences = [
     end: null,
     about: [
       'UR (Swedish Educational Broadcasting Company) is part of the public service broadcasting companies in Sweden, with Swedish Radio (SR) and Swedish Television (SVT). UR’s mandate is to produce and broadcast educational and general knowledge programmes which strengthen, broaden and complement the work of others active in education.',
-      "Across UR's content platform, I work on the APIs that power urplay.se, the apps (Android and iOS), smart TV, Tripp Trapp Träd and external partners, delivering metadata to all clients (Node, TypeScript, REST and GraphQL, Elasticsearch, MongoDB).",
+      "UR's content platform is at the core of my work: the APIs that deliver metadata to urplay.se, the apps (Android and iOS), smart TV, Tripp Trapp Träd and external partners (Node, TypeScript, REST and GraphQL, Elasticsearch, MongoDB).",
       'Search is a big part of my work in our main API: relevance, synonyms and search suggestions in Elasticsearch. Beyond product search, I recently made subtitles searchable in all languages.',
-      "Within streaming, I've evaluated and tested alternative video players and added chapters.",
+      "Within streaming, I've evaluated and tested alternative video players for third party integrations and added chapter functionality.",
       "As one of the main developers of URAS, UR's admin system and CMS for educational content, I've worked across the stack, first on Strapi and then on a custom-built system (React, TypeScript, GraphQL API, auth with JWT and roles).",
       'Since 2025 I have also worked on login and identity (Keycloak, SAML/SATOSA).',
       "Automated tests matter a lot to me, and I work test-driven where it makes sense. I've set up unit, integration and end-to-end tests for several of our services (Jest, Supertest, Playwright).",
